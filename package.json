@@ -1,5 +1,5 @@
 {
-  "name": "react-native-vk-video",
+  "name": "@procraft/react-native-vk-video",
   "version": "0.1.0",
   "description": "VkVideo component for React Native.",
   "source": "./src/index.tsx",
@@ -36,7 +36,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-vk-video-example",
+    "example": "yarn workspace @procraft/react-native-vk-video-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -51,14 +51,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/le-ar/react-native-vk-video.git"
+    "url": "git+https://github.com/procraft/react-native-vk-video"
   },
-  "author": "le-ar <andreiklauzer@gmail.com> (https://github.com/le-ar)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/le-ar/react-native-vk-video/issues"
+    "url": "https://github.com/procraft/react-native-vk-video/issues"
   },
-  "homepage": "https://github.com/le-ar/react-native-vk-video#readme",
+  "homepage": "https://github.com/procraft/react-native-vk-video#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -79,6 +78,7 @@
     "react": "18.2.0",
     "react-native": "0.74.5",
     "react-native-builder-bob": "^0.30.2",
+    "react-native-webview": "13.8.6",
     "release-it": "^15.0.0",
     "typescript": "^5.2.2"
   },
@@ -87,7 +87,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-webview": "*"
   },
   "workspaces": [
     "example"
@@ -126,33 +127,16 @@
     "root": true,
     "extends": [
       "@react-native",
-      "prettier"
+      "plugin:prettier/recommended"
     ],
     "rules": {
-      "react/react-in-jsx-scope": "off",
-      "prettier/prettier": [
-        "error",
-        {
-          "quoteProps": "consistent",
-          "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
-        }
-      ]
+      "react/react-in-jsx-scope": "off"
     }
   },
   "eslintIgnore": [
     "node_modules/",
     "lib/"
   ],
-  "prettier": {
-    "quoteProps": "consistent",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
-  },
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",

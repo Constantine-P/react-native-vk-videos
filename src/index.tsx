@@ -1,3 +1,3 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
+export * from './components/VkVideoPlayer';
+export * from './types/vkPlayerTypes';
+export * from './types/VkVideoPlayerTypes';

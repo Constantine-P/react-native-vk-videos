@@ -5,29 +5,8 @@ VkVideo component for React Native.
 ## Installation
 
 ```sh
-npm install react-native-vk-video
+npm install @procraft/react-native-vk-video
 ```
-
-## Usage
-
-
-```js
-import { multiply } from 'react-native-vk-video';
-
-// ...
-
-const result = await multiply(3, 7);
+```sh
+yarn add @procraft/react-native-vk-video
 ```
-
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
