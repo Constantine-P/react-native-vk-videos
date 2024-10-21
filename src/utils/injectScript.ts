@@ -39,6 +39,14 @@ export function createInjectInitScript(src: string, hideControls?: boolean) {
     }
   });
 
+  const hideControlls = () => {
+    const videoplayerUI = document.querySelector('.videoplayer_ui');
+    const elements = videoplayerUI.querySelectorAll('*:not(.videoplayer_thumb)');
+    elements.forEach(element => {
+      element.style.opacity = '0';
+    });
+  }
+
   script.onload = function() {
     var fakeIframe = {
       contentWindow: window, // Передаем текущее окно
@@ -73,7 +81,7 @@ export function createInjectInitScript(src: string, hideControls?: boolean) {
         cur.player.on("qualitiesListChange", (qualities) => {
           sendEvent('availableQualities', null, qualities.filter((q) => q !== 0))
         });
-        ${hideControls ? `document.querySelector('.videoplayer_ui').style.display = 'none';` : ''}
+        ${hideControls ? `hideControlls()` : ''}
         sendEvent('inited', null, state);
       });
 
