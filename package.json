@@ -51,7 +51,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/procraft/react-native-vk-videos"
+    "url": "git+https://github.com/procraft/react-native-vk-videos.git"
   },
   "license": "MIT",
   "bugs": {
