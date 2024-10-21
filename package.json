@@ -51,13 +51,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/procraft/react-native-vk-video"
+    "url": "git+https://github.com/procraft/react-native-vk-videos"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/procraft/react-native-vk-video/issues"
+    "url": "https://github.com/procraft/react-native-vk-videos/issues"
   },
-  "homepage": "https://github.com/procraft/react-native-vk-video#readme",
+  "homepage": "https://github.com/procraft/react-native-vk-videos#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
