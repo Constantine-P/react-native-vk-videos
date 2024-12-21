@@ -55,10 +55,9 @@ export function createInjectInitScript(src: string, hideControls?: boolean) {
 
     try {
       window.player = VK.VideoPlayer(fakeIframe);
-      
+
       player.on("inited", (state) => {
-        player.unmute();
-        // player.mute()
+        player.mute()
 
         var videoEl = cur.player.media.videoEl;
         videoEl.setAttribute('playsinline', 'true');
